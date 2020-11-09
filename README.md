@@ -1,4 +1,5 @@
-# impalaQueries   源项目是https://github.com/rmarshasatx/ImpalaQueries  对脚本2无法执行 做了一些修改适应当前cdh5.16.1环境
+# impalaQueries   
+#项目是基于https://github.com/rmarshasatx/ImpalaQueries  对脚本2无法执行 做了一些修改适应当前cdh5.16.1环境
 通过命令抓取一段时间impala执行的历史sql，输出到bb.json
 python3 collect_impala_queries.py 2020-11-06-8 2020-11-09-23 bb.json
 
