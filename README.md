@@ -6,7 +6,10 @@
 
 python3 collect_impala_queries.py 2020-11-06-8 2020-11-09-23 bb.json
 
-通过第二个脚本解析——多个字段  -f=file    -m=过滤超过这个时间的sql   -q=队列     ————可以用了过滤慢sql
+
+————后面2个py脚本用于过滤慢sql
+
+通过第二个脚本解析——多个字段  -f=file    -m=过滤超过这个时间的sql   -q=队列     
 
 python3 impala-sql1.py -f /root/wang/ImpalaQueries/bb.json -m 100 -q default >>sql100.sql
 
@@ -18,4 +21,4 @@ python3 impala-sql2.py -f /root/wang/ImpalaQueries/bb.json -m 1000 -q default >>
 
 对impala执行并发测试,并计算开始结束时间
 
-sh impala-test.sh 10 sql1000.sql && date
+time ./impala-test.sh 10 sql1000.sql 
