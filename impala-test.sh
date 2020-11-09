@@ -1,6 +1,4 @@
 #!/bin/sh
-time1=`date`
-echo -e "\e[033m $time1 \033[0m" >>time.log
 #Concurrency test
 let i=1
 while [ $i -le $1 ];
